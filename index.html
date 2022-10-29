@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Solar Eclipse / Mujahid Ali</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color:#000;
+                height:50vh;
+                display:grid;
+                place-items: center;
+            }
+            .circle{
+                height:200px;
+                width:200px;
+                border-radius:50%;
+                background-color:#ff9540;
+                position:relative;
+                box-shadow: 0 0 10px #ff4500, 0 0 40px #ff4500, 0 0 80px #ff4500;
+            }
+            .circle::after{
+                content: "";
+                position: absolute;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                background-color: #000;
+                animation: eclipse 3s linear infinite alternate;
+
+            }
+            @keyframes eclipse{
+                0%{
+                    transform: translate(-50px,50px) scale(0.9);
+                }
+                50%,75%{
+                    transform: translate(0px,0px) scale(1.02);
+                    box-sizing: 0 0 10px #f9f3f2, 0 0 80px 8px #c79388;    
+                }
+                100%{
+                    transform: translate(50px,-50px) scale(0.9);
+                    box-shadow: none;
+                }
+            }
+        </style>
+        <h1 style="color:#fff">Solar Eclipse</h1>
+        <h4 style="color:#fff">HTML / CSS</h4>
+        <br>
+        <br>
+        <div class="circle"></div>
+        <br><br><br><br><br><br>
+        <h5><a href="https://www.behance.net/mujahidali92">Behance: Mujahid Ali</a></h5>
+        <h5><a href="https://github.com/mujahidbcs92">Github: Mujahid Ali</a></h5>
+    </body>
+</html>
