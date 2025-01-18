@@ -1,7 +1,9 @@
-# Solar-Eclipse
-Solar Eclipse in simple html and css
 
 # Getting Started
+
+## Solar-Eclipse
+
+Solar Eclipse in simple html and css
 
 ## Tech Used Exaplianed
 
